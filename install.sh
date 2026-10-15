@@ -1,7 +1,7 @@
 #!/bin/zsh
 # One-command install: fetches (or updates) the source, then builds and launches the app.
 set -euo pipefail
-REPO="${PV_REPO:-git@github.com:apetcu/pressure-valve.git}"
+REPO="${PV_REPO:-https://github.com/apetcu/pressure-valve.git}"
 SRC="${PV_SRC:-$HOME/.local/src/pressure-valve}"
 
 if ! xcode-select -p >/dev/null 2>&1; then

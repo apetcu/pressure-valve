@@ -23,10 +23,10 @@ Every kill asks for confirmation first. A process gets SIGTERM, and anything sti
 Requires macOS 14+ and the Xcode command line tools (the installer offers to add them).
 
 ```bash
-git clone git@github.com:apetcu/pressure-valve.git /tmp/pv && /tmp/pv/install.sh
+curl -fsSL https://raw.githubusercontent.com/apetcu/pressure-valve/main/install.sh | zsh
 ```
 
-or, from a checkout, just `./install.sh`. It keeps the source in `~/.local/src/pressure-valve`, compiles the app, ad-hoc signs it, installs it into `~/Applications` and launches it. Run it again to update.
+From a checkout, `./install.sh` does the same. It keeps the source in `~/.local/src/pressure-valve`, compiles the app, ad-hoc signs it, installs it into `~/Applications` and launches it. Run it again to update.
 
 ## Command line
 
